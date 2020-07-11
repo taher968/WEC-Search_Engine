@@ -9,7 +9,7 @@ The stack involves:
 * Request
 * EJS
 
-The API used was the Google Custom Search API and pulled data from various sources like:
+The API used was the Google Custom Search API and pulled data from various sources including:
 * Khan Academy
 * Symbolab
 * Wolfram-Alpha
