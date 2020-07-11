@@ -1,0 +1,14 @@
+<h1> Search Results </h1>
+
+
+<% for(var i = 0; i < 10; i++) { %>
+    <a href="<%= data.items[i].link %>" target="_blank"> <%= data.items[i].title %></a>
+    <p> <%= data.items[i].snippet %></p>
+    <p>--------------------</P>
+
+<% } %>
+
+
+<form action="/" method="GET">
+    <input type="submit" value="Change city">
+</form>
