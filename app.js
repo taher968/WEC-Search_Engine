@@ -10,7 +10,7 @@ app.get("/",function(req,res) {
 
 app.get("/result",function(req,res) {
     var searchTerm = req.query.search;
-    var url = "https://www.googleapis.com/customsearch/v1?key=AIzaSyAUYHglv5zYXxB7r9w3SAQlLlpD6f0ZaaI&cx=004841306812345338799:d2wbqpqxzsg&q=" + searchTerm;
+    var url = "https://www.googleapis.com/customsearch/v1?key=AIzaSyAUYHglv5zYXxB7r9w3SAQlLlpD6f0ZaaI&cx=004841306812345338799:awck7rhkfse&q=" + searchTerm;
     request(url,function(error,response,body) {
         if(!error && response.statusCode == 200) {
             var data = JSON.parse(body);
