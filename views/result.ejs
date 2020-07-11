@@ -1,7 +1,7 @@
 <h1> Search Results </h1>
 
 
-<% for(var i = 0; i < 10; i++) { %>
+<% for(var i = 0; i < data.items.length; i++) { %>
     <a href="<%= data.items[i].link %>" target="_blank"> <%= data.items[i].title %></a>
     <p> <%= data.items[i].snippet %></p>
     <p>--------------------</P>
