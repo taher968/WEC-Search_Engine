@@ -5,7 +5,23 @@ background-color: #191919;">
 <head>
     <title>Educational Search Engine</title>
     <link rel="stylesheet" type="text/css" href="./App.css">
-    <svg width="250" height="200" viewBox="0 0 694 343" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+    .Logo {padding-top: 5px;
+        height: 50px;
+        pointer-events: none;
+        @media(prefers-reduced-motion: no-preference) {
+          animation: App-logo-spin 5s 20s linear;
+        }
+    }
+        @keyframes App-logo-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }}
+    </style>
+    <svg class="Logo" width="200" height="100" viewBox="0 0 694 343" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g clip-path="url(#clip0)">
         <rect width="694" height="343" fill="white"/>
         <rect x="1.5" y="0.5" width="692" height="342" fill="url(#pattern0)" stroke="black"/>
@@ -27,7 +43,7 @@ background-color: #191919;">
 </head>
 
 <h1 style=" background-color: #191919;
-min-height: 50px;
+min-height: 25px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -35,7 +51,15 @@ justify-content: center;
 font-size: calc(10px + 2vmin);
 color: white;">Search Engine</h1>
 <form action="/result" method="GET">
-<input type="text" name="search" placeholder="search" style="background-color:gray;color:white; input::placeholder{color:darkgray;}">
+<input type="text" name="search" placeholder="search" style="background-color:gray;color:white;">
+<style>input::placeholder{
+color:darkgray;}
+.submit:hover{
+    background-color:aquamarine !important;
+    color: #191919 !important;
+    font-weight: bold;
+}
+</style>
     <input class="submit" style="background-color: #191919;
     border-color: aqua;
     color: aqua;"type="submit">
