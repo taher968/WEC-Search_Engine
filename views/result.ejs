@@ -1,14 +1,30 @@
-<h1> Search Results </h1>
+<!DOCTYPE html>
+<html style="text-align: center;
+color: gold;
+background-color: #191919;">
+    <head><link rel="stylesheet" type="text/css" href="./App.css">
+        <h1 style=" background-color: #191919;
+        min-height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;"> Search Results </h1></head>
+
 
 
 <% for(var i = 0; i < data.items.length; i++) { %>
     <a href="<%= data.items[i].link %>" target="_blank"> <%= data.items[i].title %></a>
     <p> <%= data.items[i].snippet %></p>
-    <p>--------------------</P>
+    <hr style=" border-color: gold;"/>
 
 <% } %>
 
 
 <form action="/" method="GET">
-    <input type="submit" value="Change search">
+    <input type="submit" style="background-color: #191919;
+        border-color: aqua;
+        color: aqua;" value="Change search">
 </form>
+</html>
